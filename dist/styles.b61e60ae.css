@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700');
 
 
 * {
@@ -5,30 +6,62 @@
 }
 
 body {
-  max-width: 960px;
-  background-color: lightgrey;
-  display: contents;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #FAFAFA;
+  text-align: center;
 }
 
 h1 {
-  text-align: center;
-  padding-top: 5%;
+  float: left;
 }
 
-h2{
+h2,
+li {
   text-align: center;
+  padding-top: 5%;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: normal;
+  text-transform: uppercase;
+  color: #4A4A4A;
+}
 
+h3 {
+  text-align: center;
 }
 
 main {
   background-color: white;
-  margin-left: 30px;
-  margin-right: 30px;
+}
+
+ul {
+  list-style-type: none;
+  display: inline;
+  display: flex;
+  float: right;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+header {
+  margin: 30px 30px 57px 30px;
+}
+
+.container {
+  position: relative;
+  max-width: 964px;
+  margin: auto;
 }
 
 .card {
   text-align: center;
   padding: 20px 20px 0px 20px;
+  max-width: 40%;
 }
 
 .card:last-child {
@@ -38,18 +71,41 @@ main {
 .main-row {
   padding: 30px;
   margin: 20px 0px;
-  width: 100%;
   display: flex;
 }
 
 
 .main-image {
   width: inherit;
-  max-width: 400px;
+  max-width: 200px;
 }
 
 .contacts {
   text-align: center;
+}
+
+.student-name {
+  text-align: left;
+  list-style-type: none;
+}
+
+.student-image {
+  width: 40%;
+  max-width: 200px;
+  float: right;
+}
+
+header p {
+  max-width: 50%;
+  float: left;
+  text-align: left;
+}
+
+
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 
