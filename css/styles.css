@@ -263,5 +263,20 @@ footer {
 }
 
 @media (max-width: 768px) {
+  .card {
+    text-align: center;
+    max-width: 50%;
+    margin: auto;
+  }
+
+
+  .card:last-child {
+    margin-right: auto;
+  }
+
+  .main-image {
+    max-width: 300px;
+  }
+
 
 }
