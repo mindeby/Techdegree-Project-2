@@ -108,6 +108,10 @@ header p {
   display: flex;
 }
 
+.main-row:last-child {
+  margin-bottom: 0px;
+}
+
 .main-image {
   max-width: 270px;
 }
@@ -115,7 +119,6 @@ header p {
 .contacts {
   text-align: center;
   padding-bottom: 25px;
-  margin-top: -25px;
 }
 
 .student-name {
