@@ -160,6 +160,10 @@ footer {
     max-width: 300px;
   }
 
+  footer {
+    padding-bottom: 60px;
+  }
+
 
 }
 
