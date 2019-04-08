@@ -81,6 +81,7 @@ header p {
 
 .student-image {
   padding-top: 20px;
+  min-width: 40%;
   max-width: 40%;
   float: right;
 }
