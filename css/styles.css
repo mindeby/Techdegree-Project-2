@@ -134,6 +134,130 @@ footer h1 {
   line-height: 30px;
 }
 
+footer h4 {
+  display: none;
+}
+
 footer {
   border-top: 1px solid rgb(240,240,240);
+}
+
+@media (max-width: 320px) {
+  h1 {
+    float:none;
+    color:#4A4A4A;
+    font-size: 1.5rem;
+  }
+
+  ul {
+    float: none;
+    display: block;
+    margin: auto;
+    text-transform: uppercase;
+    padding: 0px;
+  }
+
+  .nav{
+    margin: auto;
+  }
+
+  li {
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: normal;
+    text-transform: uppercase;
+    background-color: white;
+    color: #4A4A4A;
+    margin-right: 0px;
+    margin-top: 5px;
+    padding: 5px;
+  }
+
+  li:first-child {
+    margin-top: 0px;
+  }
+
+  .student-image {
+    margin-top: 20px;
+    min-width: 80%;
+    max-width: 80%;
+    float: none;
+  }
+
+  header p {
+    max-width: 100%;
+    color: #B7B7B7;
+    float: none;
+    text-align: center;
+    padding-right: 0px;
+  }
+
+  header {
+    margin: 0px;
+  }
+
+  .container {
+    margin: auto;
+  }
+
+  .main-row {
+    margin: auto;
+    padding: 0px;
+    display: block;
+  }
+
+  .card {
+    text-align: center;
+    padding: 0px;
+    max-width: 100%;
+    margin: auto;
+  }
+
+  .section-title {
+    font-weight: bolder;
+    padding: 30px;
+    font-size: 15px;
+    margin-left: 30px;
+  }
+
+  .card:last-child {
+    padding-bottom: 15px;
+  }
+
+  footer br {
+    display: none;
+  }
+
+  footer ul {
+    display: none;
+  }
+
+  footer h1 {
+    font-size: 1rem;
+    line-height: 30px;
+    float: left;
+    margin-left: 10px;
+  }
+
+  footer h4 {
+    font-size: 0.8rem;
+    margin-top: 10px;
+    display: flex;
+    float: right;
+    line-height: 30px;
+    color:#4A4A4A;
+    text-transform: uppercase;
+  }
+
+  a {
+    color: #4A4A4A;
+    text-decoration: none;
+  }
+
+  .mobile-invisible {
+    display: none;
+  }
+
+
 }
