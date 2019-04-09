@@ -4,12 +4,13 @@
     <meta charset="utf-8">
     <title>My Second Project</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/mobile.css" />
   </head>
   <body>
     <div class="container">
-      <header class="group">
-        <div class="nav group">
+      <header class="clearfix">
+        <div class="nav clearfix">
           <h1>Débora Ribeiro</h1>
           <ul>
             <li><a href="#">Home</a></li>
@@ -17,7 +18,7 @@
             <li><a href="#">Contact</a></li>
           </ul>
         </div>
-        <div class="hero">
+        <div class="hero clearfix">
           <img src="images/responsive-layout-profile.png" alt="Picture of the student" class="student-image"/>
           <p>
             Hi! I'm a front-end developer who loves responsive design and css.
@@ -27,10 +28,9 @@
         </div>
       </header>
 
-
       <main>
         <h2 class="section-title">Portfolio</h2>
-        <div class="main-row">
+        <div class="card-container">
 
           <div class="card">
             <img src="images/portfolio-1.png" alt="Picture of the marketing page" class="main-image"/>
@@ -72,18 +72,18 @@
 
       <div class="contacts">
         <h2 class="section-title">Contact</h2>
-        <p>If you're interested in chatting or want more information <br class="mobile-invisible"/> about what I've been working on, I'd love to hear from you!</p><br class="mobile-invisible" />
+        <p>If you're interested in chatting or want more information <br class="mobile-invisible"/> about what I've been working on, I'd love to hear from you!</p><br/>
         <p>Phone <strong>+1 (111) 555-1234</strong></p>
         <p>Email <strong>email@yoursite.com</strong></p>
       </div>
 
-      <footer>
+      <footer class="clearfix">
         <h1>Débora Ribeiro</h1>
-        <h4><a href="#">Back to top</a></h4>
         <ul>
-          <li> <a href="#">Home</a></li>
-          <li><a href="#">Portfolio</a></li>
-          <li><a href="#">Contact</a></li>
+          <li class="wide-invisible"<a href="#">Back to top</a></li>
+          <li class="mobile-invisible"> <a href="#">Home</a></li>
+          <li class="mobile-invisible"><a href="#">Portfolio</a></li>
+          <li class="mobile-invisible"><a href="#">Contact</a></li>
         </ul>
       </footer>
     </div>
