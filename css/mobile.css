@@ -16,7 +16,7 @@ body {
   margin:1em;
 }
 
-h1 {
+li:first-child {
   color:#4A4A4A;
 }
 
@@ -25,6 +25,7 @@ ul {
   text-align: center;
   padding-inline-start: 0px;
 }
+
 
 li, a {
   text-align: center;
@@ -37,6 +38,12 @@ li, a {
   font-weight: bold;
   text-decoration: none;
 }
+
+li:first-child {
+  background-color: #FAFAFA;
+}
+
+
 
 header p {
   color: #B7B7B7;
@@ -114,7 +121,7 @@ footer h1 {
 
 footer ul {
   float: right;
-  padding-top: 1em;
+  padding-top: 0.6em;
   text-transform: uppercase;
   color: #4A4A4A;
   font-size: 0.9em;
@@ -140,10 +147,13 @@ footer {
 
 @media (min-width: 768px) {
 
+
+
   .card {
     display: inline-block;
+    vertical-align: top;
     text-align: center;
-    max-width: 40%;
+    max-width: 45%;
     margin: auto;
   }
 
@@ -157,32 +167,35 @@ footer {
   li, a {
     display: inline-block;
     background-color: #FAFAFA;
+    font-size: 0.9em;
   }
+
+
+  body {
+    max-width: 90%;
+    margin: auto;
+  }
+
 
 
   header p {
     max-width: 60%;
     float: left;
-    font-size: 1em;
+    font-size: 1.2em;
     text-align: left;
-    padding-left: 5em;
-    padding-right: 1em;
-  }
+    margin-left: -1em;
+    }
 
   .student-image {
     float: right;
     max-width: 40%;
-    padding-bottom: 3em;
-    padding-right: 3em;
-  }
-
-  .contacts p {
-    padding: 0 10em;
+    padding-bottom: 2em;
+    margin-right: -1em;;
   }
 
   .container {
     max-width: 100%;
-    margin-bottom: 0px;
+    margin-bottom: 2em;
   }
 
   .mobile-invisible {
@@ -196,14 +209,102 @@ footer {
 
 
   main {
-    margin-left: -4em;
-    width: calc(100%-4em);
+    margin-left: -10%;
+    margin-right: -10%;
+  }
+
+  .card-container {
+  text-align: center;
+  }
+
+  .card-container p {
+    padding: 0 2em;
+    }
+
+  .contacts p {
+    padding: 0 5em;
   }
 
 
   footer ul {
     padding-top: 1.5em;
   }
+
+
+}
+
+@media (min-width: 1024px) {
+
+  .wider-invisible {
+    display: none;
+  }
+
+  body {
+    max-width: 100%;
+    margin: auto;
+  }
+
+  ul {
+    padding-top: 1em;
+    float: left;
+  }
+
+  li {
+    float: left;
+  }
+
+
+  li:first-child {
+    margin-left: 2em;
+    padding-right: 39em;
+
+  }
+
+  .card {
+    max-width: 33%;
+  }
+
+
+  header p {
+    max-width: 50%;
+    margin-left: 2em;
+    }
+
+  .student-image {
+    padding-bottom: 2em;
+    margin-right: 2em;;
+  }
+
+
+  main {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .card-container {
+  text-align: center;
+  }
+
+  .contacts p {
+    padding: 0 5em;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
