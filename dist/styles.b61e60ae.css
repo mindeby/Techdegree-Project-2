@@ -11,278 +11,310 @@ body {
   text-align: center;
 }
 
-.group:after {
+.container {
+  text-align: center;
+  margin:1em;
+}
+
+li:first-child {
+  color:#4A4A4A;
+}
+
+
+ul {
+  display: block;
+  text-align: center;
+  padding-inline-start: 0px;
+}
+
+
+li, a {
+  text-align: center;
+  background-color: white;
+  list-style-type: none;
+  padding: 0.5em;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  color: #4A4A4A;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+li:first-child {
+  background-color: #FAFAFA;
+}
+
+
+
+header p {
+  color: #B7B7B7;
+  line-height: 1.2em;
+}
+
+.student-image {
+  padding-top: 20px;
+  max-width: 70%;
+}
+
+h2 {
+  text-transform: uppercase;
+  color: #4A4A4A;
+  font-size: 1em;
+  padding: 1em;
+  padding-top: 1.83em;
+}
+
+h3 {
+  color: #4A4A4A;
+  font-size: 1.2em;
+  padding-top: 0.8em;
+  padding-bottom: 0.4em;
+  font-weight:600;
+}
+
+
+.card-container {
+  text-align: center;
+  margin: auto;
+}
+
+main {
+  background-color: white;
+  padding-bottom: 3em;
+  margin-left: -1em;
+  margin-right: -1em;
+}
+
+
+.main-image {
+  max-width: 90%;
+
+}
+
+.card p {
+  color: #4A4A4A;
+  font-weight:100;
+  padding-bottom: 0.6em;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+}
+
+.contacts {
+  color: #A0A0A0;
+  padding-bottom: 2em;
+  padding-top: 1.5em;
+}
+
+.contacts strong {
+  color: #7F7F7F;
+}
+
+.mobile-invisible {
+  display: none;
+
+}
+
+footer h1 {
+  float: left;
+  font-size: 1em;
+  padding-top: 1em;
+}
+
+footer ul {
+  float: right;
+  padding-top: 0.6em;
+  text-transform: uppercase;
+  color: #4A4A4A;
+  font-size: 0.9em;
+  font-weight: bold;
+}
+
+footer {
+  border-top: 1px solid rgb(240,240,240);
+
+}
+
+.clearfix:after {
   content: "";
   display: table;
   clear: both;
 }
 
-
-.section-title {
-  font-weight: bolder;
+.wide-invisible {
+  background-color: inherit;
 }
 
-h1 {
-  float: left;
-  color:#4A4A4A;
-}
+/*Media Queries */
 
-main {
-  background-color: white;
-}
+@media (min-width: 768px) {
 
-h2,
-li {
-  text-align: center;
-  font-weight: bold;
-  font-size: 12px;
-  line-height: normal;
-  text-transform: uppercase;
-  color: #4A4A4A;
-  margin-right: 30px;
-}
 
-li:last-child {
-  margin-right: 0px;
-}
 
-h2 {
-  padding-top: 60px;
-}
-
-h3 {
-  text-align: center;
-}
-
-ul {
-  list-style-type: none;
-  display: flex;
-  float: right;
-  text-transform: uppercase;
-  padding-bottom: 10px;
-}
-
-a {
-  color: black;
-  text-decoration: none;
-}
-
-header {
-  margin: 30px 30px 57px 30px;
-}
-
-header p {
-  max-width: 60%;
-  color: #B7B7B7;
-  float: left;
-  text-align: left;
-  padding-right: 20px;
-}
-
-.student-image {
-  padding-top: 20px;
-  min-width: 40%;
-  max-width: 40%;
-  float: right;
-}
-
-.container {
-  margin: 30px;
-}
-
-.card {
-  text-align: center;
-  padding: 10px 10px 0px 10px;
-  max-width: 31%;
-  margin: auto;
-}
-
-.card p {
-  padding: 5px;
-}
-
-.card:last-child {
-  margin-right: 20px;
-}
-
-.main-row {
-  padding: 30px;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.main-row:last-child {
-  margin-bottom: 0px;
-}
-
-.main-image {
-  max-width: 240px;
-}
-
-.contacts {
-  text-align: center;
-  padding-bottom: 25px;
-}
-
-.student-name {
-  float:left;
-  text-align: left;
-  list-style-type: none;
-}
-
-footer h1 {
-  font-size: 1rem;
-  line-height: 30px;
-}
-
-footer h4 {
-  display: none;
-}
-
-footer {
-  border-top: 1px solid rgb(240,240,240);
-}
-
-@media (max-width: 768px) {
   .card {
+    display: inline-block;
+    vertical-align: top;
     text-align: center;
-    max-width: 50%;
+    max-width: 45%;
     margin: auto;
   }
 
-
-  .card:last-child {
-    margin-right: auto;
-    margin-top: 0px;
-  }
-
-  .main-image {
-    max-width: 300px;
-  }
-
-  footer {
-    padding-bottom: 60px;
-  }
-
-
-}
-
-@media (max-width: 320px) {
-  h1 {
-    float:none;
-    color:#4A4A4A;
-    font-size: 1.5rem;
-  }
 
   ul {
-    float: none;
-    display: block;
-    margin: auto;
-    text-transform: uppercase;
-    padding: 0px;
-  }
-
-  .nav{
-    margin: auto;
-  }
-
-  li {
+    display: inline-block;
     text-align: center;
-    font-weight: bold;
-    font-size: 15px;
-    line-height: normal;
-    text-transform: uppercase;
-    background-color: white;
-    color: #4A4A4A;
-    margin-right: 0px;
-    margin-top: 5px;
-    padding: 5px;
+    margin-top: -0.8em;
   }
 
-  li:first-child {
-    margin-top: 0px;
+  li, a {
+    display: inline-block;
+    background-color: #FAFAFA;
+    font-size: 0.9em;
   }
 
-  .student-image {
-    margin-top: 20px;
-    min-width: 80%;
-    max-width: 80%;
-    float: none;
+  a:hover {
+    background-color: #ededed;
+    border-radius: 4px;
   }
+
+
+  body {
+    max-width: 90%;
+    margin: auto;
+  }
+
+
 
   header p {
-    max-width: 100%;
-    color: #B7B7B7;
-    float: none;
-    text-align: center;
-    padding-right: 0px;
-  }
+    max-width: 60%;
+    float: left;
+    font-size: 1.2em;
+    text-align: left;
+    margin-left: -1em;
+    }
 
-  header {
-    margin: 0px;
+  .student-image {
+    float: right;
+    max-width: 40%;
+    padding-bottom: 2em;
+    margin-right: -1em;;
   }
 
   .container {
-    margin: auto;
+    max-width: 100%;
+    margin-bottom: 2em;
   }
 
-  .main-row {
-    margin: auto;
-    padding: 0px;
-    display: block;
+  .mobile-invisible {
+    display: inline-block;
+
   }
 
-  .card {
-    text-align: center;
-    padding: 0px;
+  .wide-invisible {
+    display: none;
+  }
+
+
+  main {
+    margin-left: -10%;
+    margin-right: -10%;
+  }
+
+  .card-container {
+  text-align: center;
+  }
+
+  .card-container p {
+    padding: 0 2em;
+    }
+
+  .contacts p {
+    padding: 0 5em;
+  }
+
+
+  footer ul {
+    padding-top: 1.5em;
+  }
+
+
+}
+
+@media (min-width: 1024px) {
+
+  .wider-invisible {
+    display: none;
+  }
+
+  body {
     max-width: 100%;
     margin: auto;
   }
 
-  .section-title {
-    font-weight: bolder;
-    padding: 30px;
-    font-size: 15px;
-    margin-left: 30px;
-  }
-
-  .card:last-child {
-    padding-bottom: 15px;
-  }
-
-  footer br {
-    display: none;
-  }
-
-  footer ul {
-    display: none;
-  }
-
-  footer h1 {
-    font-size: 1rem;
-    line-height: 30px;
+  ul {
+    padding-top: 1em;
     float: left;
-    margin-left: 10px;
   }
 
-  footer h4 {
-    font-size: 0.8rem;
-    margin-top: 10px;
-    display: flex;
-    float: right;
-    line-height: 30px;
-    color:#4A4A4A;
-    text-transform: uppercase;
+  li {
+    float: left;
   }
 
-  a {
-    color: #4A4A4A;
-    text-decoration: none;
+
+  li:first-child {
+    margin-left: 2em;
+    padding-right: 39em;
+
   }
 
-  .mobile-invisible {
-    display: none;
+  .card {
+    max-width: 33%;
   }
+
+
+  header p {
+    max-width: 50%;
+    margin-left: 2em;
+    }
+
+  .student-image {
+    padding-bottom: 2em;
+    margin-right: 2em;;
+  }
+
+
+  main {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .card-container {
+  text-align: center;
+  }
+
+  .contacts p {
+    padding: 0 5em;
+  }
+
+  /*comment */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 }
 

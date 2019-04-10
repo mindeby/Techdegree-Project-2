@@ -5,17 +5,17 @@
     <title>My Second Project</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/mobile.css" />
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
     <div class="container">
       <header class="clearfix">
-        <div class="nav clearfix">
+        <div class="nav clearfix" id="top">
           <ul>
             <li>Débora Ribeiro</li> <br class="wider-invisible"/>
             <li><a href="#">Home</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#portf">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
         <div class="hero clearfix">
@@ -29,7 +29,7 @@
       </header>
 
       <main>
-        <h2 class="section-title">Portfolio</h2>
+        <h2 class="section-title" id="portf">Portfolio</h2>
         <div class="card-container">
 
           <div class="card">
@@ -70,7 +70,7 @@
         </div>
       </main>
 
-      <div class="contacts">
+      <div class="contacts" id="contact">
         <h2 class="section-title">Contact</h2>
         <p>If you're interested in chatting or want more information <br class="mobile-invisible"/> about what I've been working on, I'd love to hear from you!</p><br/>
         <p>Phone <strong>+1 (111) 555-1234</strong></p>
@@ -80,10 +80,10 @@
       <footer class="clearfix">
         <h1>Débora Ribeiro</h1>
         <ul>
-          <li class="wide-invisible"<a href="#">Back to top</a></li>
-          <li class="mobile-invisible"> <a href="#">Home</a></li>
-          <li class="mobile-invisible"><a href="#">Portfolio</a></li>
-          <li class="mobile-invisible"><a href="#">Contact</a></li>
+          <li class="wide-invisible">  <a href="#top" style="background-color:#FAFAFA">Back to top</a></li>
+          <li class="mobile-invisible"><a href="#">Home</a></li>
+          <li class="mobile-invisible"><a href="#portf">Portfolio</a></li>
+          <li class="mobile-invisible"><a href="#contact">Contact</a></li>
         </ul>
       </footer>
     </div>
