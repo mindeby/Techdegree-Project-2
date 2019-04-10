@@ -325,7 +325,7 @@ footer {
 
   li:first-child {
     margin-left: 2em;
-    padding-right: 39em;
+    padding-right: 34em;
 
   }
 
@@ -358,7 +358,26 @@ footer {
     padding: 0 5em;
   }
 
-  /*comment */
+  .bonus-section {
+    margin: auto 20px;
+    max-width: 100%;
+  }
+
+  h4, .bonus-section ul:first-child  {
+    padding-right: 1em;
+  }
+
+
+  .bonus-section li {
+    display: inline-block;
+    margin-right: 2em;
+    vertical-align: top;
+    padding-right: 1em
+  }
+
+
+
+
 
 
 
