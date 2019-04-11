@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700');
 
-
 * {
   box-sizing: border-box;
 }
@@ -24,7 +23,7 @@ li:first-child {
 ul {
   display: block;
   text-align: center;
-  padding-inline-start: 0px;
+  padding-inline-start: 0;
 }
 
 
