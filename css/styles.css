@@ -31,12 +31,16 @@ li, a {
   text-align: center;
   background-color: white;
   list-style-type: none;
-  padding: 0.5em;
+  padding: 0.4em;
   margin-bottom: 5px;
   text-transform: uppercase;
   color: #4A4A4A;
   font-weight: bold;
   text-decoration: none;
+}
+
+a {
+  padding:0;
 }
 
 li:first-child {
